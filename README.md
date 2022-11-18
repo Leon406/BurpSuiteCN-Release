@@ -7,13 +7,13 @@
 ### 一键启动(需要勾选自动启动auto start)
 
 ```
-java -jar burpsuitloader-1.3-all.jar
+java -jar burpsuitloader-x.xx-all.jar
 ```
 
 ### keygen页面
 
 ```
-java -jar burpsuitloader-1.3-all.jar -r
+java -jar burpsuitloader-x.xx-all.jar -r
 ```
 
 
