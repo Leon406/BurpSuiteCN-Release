@@ -1,3 +1,19 @@
+ 
+
+
+<p align="center">
+<a href="https://github.com/Leon406/BurpSuiteCN-Release/releases/latest"><img src="https://img.shields.io/github/release/Leon406/BurpSuiteCN-Release.svg"/></a>
+<img src="https://img.shields.io/github/downloads/Leon406/BurpSuiteCN-Release/total"/>
+</p>
+
+<h4 align="center">Visitors :eyes:</h4>
+
+<p align="center"><img src="https://profile-counter.glitch.me/Leon406_BurpSuiteCN-Release/count.svg" alt="BurpSuiteCN-Release :: Visitor's Count" />
+ <img width=0 height=0 src="https://profile-counter.glitch.me/Leon406/count.svg" alt="Leon406:: Visitor's Count" />
+
+</p>
+ 
+ 
  **BurpSuite汉化发布, 翻译更新到 22.12.3 版本**
 
 
