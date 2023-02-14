@@ -27,7 +27,7 @@
 java -jar burpsuitloader-x.xx-all.jar
 ```
 
-### keygen页面
+### keygen页面 (按需勾选loader,汉化,一键启动)
 
 ```
 java -jar burpsuitloader-x.xx-all.jar -r
