@@ -33,6 +33,19 @@ java -jar burpsuitloader-x.xx-all.jar
 java -jar burpsuitloader-x.xx-all.jar -r
 ```
 
+
+### java agent配置方式
+
+
+```
+// loader + 汉化
+%JAVA_HOME%/bin/java -javaagent:burpsuitloader-x.xx-all.ja=loader,han   -jar burpsuite_pro_v20xx.jar
+
+// 仅汉化,loader失效
+%JAVA_HOME%/bin/java -javaagent:burpsuitloader-x.xx-all.ja=han   -jar burpsuite_pro_v20xx.jar
+
+```
+
 ### 版本命名
 
 [A]A.BB.CC[.DD]
