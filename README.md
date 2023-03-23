@@ -12,10 +12,13 @@
  <img width=0 height=0 src="https://profile-counter.glitch.me/Leon406/count.svg" alt="Leon406:: Visitor's Count" />
 
 </p>
+BurpSuite汉化发布   如果有用请star,这是支持我更新的最大的动力.
+
+ ** 3.3.23 翻译更新到 2023.3.2 版本**
+ 修复翻译错误,及Target过滤显示问题
  
- 
- **BurpSuite汉化发布, 翻译更新到 2023.1 版本**
- 此版本修改较多,新增368个翻译,3个白名单规则, 如果有用请star,这是支持我更新的最大的动力.
+ **3.1.16 翻译更新到 2023.1 版本**
+ 此版本修改较多,新增368个翻译,3个白名单规则.
 
 
 
