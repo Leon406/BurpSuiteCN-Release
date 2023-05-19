@@ -469,7 +469,7 @@ Auth type	认证类型
 Authenticated crawl (random). Estimating time remaining...	身份验证(随机).预计剩余时间....
 Authenticated crawl \((.*)\). Estimating time remaining...	身份验证($1). 预计剩余时间....
 Authentication type:	认证类型：
-Author:	作者:
+(?i)Author:	作者:
 Auto analyze	自动解析
 Auto analyze \(next: (\d+)\)	自动解析 (次: $1)
 Auto §	自动添加payload位置 §
@@ -940,6 +940,7 @@ Decode	解码
 Decode as ...	解码...
 Decode as ASCII hex	解码为ASCII十六进制
 Decoder	编码工具
+(?i)Organizer	备忘录
 Decoding request body	解码请求体
 Deduplicate	去重
 Deduplication	去重
@@ -1953,7 +1954,7 @@ Message actions	消息操作
 Message editor documentation	消息编辑器文档
 Message editor help	消息编辑器帮助
 Meta refresh tag	HTML refresh meta标签
-Method	请求方法
+Method	方法
 Method:	方法：
 Mime type	MIME类型
 Min fraction digits:	小数最小位数：
@@ -2821,8 +2822,8 @@ Send	发送
 Misc Options	其他选项
 Form submission	表单提交
 Send requests here from other tools to configure a live capture. Select the request to use, configure the other options below, then click "Start live capture".	从其他工具发送实时捕获设置请求。请选择要使用的请求，设置其他选项，然后单击“开始实时捕获”。
-Send to (Comparer|Decoder|Intruder|Repeater|Sequencer|Spider)	发送到$1
-Send to (Comparer|Decoder|Intruder|Repeater|Sequencer|Spider|SQLMapper|Laudanum|reCAPTCHA)	发送到$1
+Send to (Comparer|Decoder|Intruder|Repeater|Sequencer|Spider|Organizer)	发送到$1
+Send to (Comparer|Decoder|Intruder|Repeater|Sequencer|Spider|Organizer|SQLMapper|Laudanum|reCAPTCHA)	发送到$1
 Send to Comparer (request)	发送到Comparer（请求）
 Send to Comparer (requests)	发送到Comparer（请求）
 Send to Comparer (response)	发送到Comparer（响应）
@@ -4259,3 +4260,258 @@ File extensions	文件扩展
 Queued tasks	队列中任务
 Comments	注释
 Comments search(.*)	注释搜索$1
+##添加Organizer##翻译 
+#####添加Logger++ 插件翻译-部分不生效#####
+In progress	处理中
+Postponed	推迟
+Log From	日志来源
+In scope items only	仅在范围内项目
+All Tools	所有来源
+Filter Library	过滤库
+Grep Values	正则搜索
+Unique Results	去重结果
+Import proxy history on startup		启动时导入代理日志
+Import Burp Proxy History	导入Burp代理日志
+CSV Exporter	CSV导出
+Export as CSV	导出到CSV
+Auto-export as CSV	自动导出到CSV
+Unsaved	未保存的
+Field	字段
+Select fields to be exported:	选择要导出的字段:
+Select All	选择所有
+Select None	取消所有
+
+(?i)Tags?	标签
+Add Tag	添加标签
+Set as LogFilter	应用到过滤器
+Use as Color LogFilter	设置日志过滤颜色
+Ignored	忽略
+Snippet	语法
+Add Snippet	添加语法
+Remove Selected	删除选中
+In Scope Only	仅在范围内
+Search Responses	搜索响应
+Search Requests	搜索请求
+Saved Filter Sharing		保存与分享过滤规则
+Color Filter Sharing		保存与分享颜色规则
+Other	其他
+Response Timeout (Seconds):	响应超时(秒):
+Maximum Log Entries:	最大日志条数:
+Search Threads:	搜索线程数:
+Maximum Response Size (MB):	最大响应大小(MB):
+(?i)Reset	重置
+(?i)Reset All Settings?	重置所有设置
+(?i)Clear The Logs?	清空日志
+Note 0: Right click on columns' headers to change settings.	提示0：右键单击列的标题以更改设置
+Note 1: Extensive logging  may affect Burp Suite performance.	提示1：广泛的日志记录可能会影响Burp Suite的性能，建议只匹配范围内项目
+Note 2: Automatic logging does not saveFilters requests and responses. Only table contents.	提示2：自动日志记录不保存过滤器请求和响应，只有表单内容
+Note 3: Full request/response logging available in 'Project Options > Misc > Logging'	提示3："项目选项 > Misc > 日志" 中提供完整的请求/响应日志记录
+Note 4: Updating the extension will reset the log table settings.	提示4：更新扩展将重置日志设置
+Advanced multithreaded logging tool	高级多线程日志记录工具
+Logger++ was developed as an alternative to the log history included within Burp Suite. Advantages over the original implementation are a more comprehensive number of fields, the ability to show only specific entries to better monitor activity via the use of adaptable filters from various fields and row coloring to highlight interesting entries which match a specific filter.	LOGER++是作为Burp Suite中包含的日志历史的替代而开发的。与原始实现相比，它具有更全面的字段数量，能够只显示特定的条目，通过使用来自不同字段的适应性flters来更好地监视活动，并通过行着色突出显示与特定筛选器匹配的有趣条目。
+Filters were developed with the intention of being highly customisable and therefore may be as simple or complex as you require. Once a filter has been entered, the color of the input field will change to reflect the validity of the filter.	开发过滤器的目的是高度可定制，因此可以根据您的需求简单或复杂化。设置过滤规则后，匹配字段的颜色将更改以反应规则的有效性。
+With the new parser, fields have been separated into groups. A list of fields and their group can be found to the right. E.g. Request.Method		使用新的解析器，字段已分组。可以在右侧找到字段以及所属组的列表，例如：Request.Method
+Filter Fields	筛选字段
+
+(?i)Creating Filters	创建过滤器
+(?i)Basic operations	基本运算符
+== - Equal, valid on all fields.	== 相等，可对所有字段使用
+!= - Not Equal, valid on all fields.	!= 不相等，可对所有字段使用
+< - Less Than, only valid on numeric fields (Integer, Short, Date, ...)	< 小于，仅对数值字段（整数、短整型、日期等）有效
+> - Greater Than, only valid on numeric fields (Integer, Short, Date, ...)		> 大于，仅对数值字段（整数、短整型、日期等）有效
+<= - Less Than Or Equal, only valid on numeric fields (Integer, Short, Date, ...)	<= 小于或等于，仅对数值字段（整数、短整型、日期等）有效
+>= - Greater Than Or Equal, only valid on numeric fields (Integer, Short, Date, ...)	>= 大于或等于，仅对数值字段（整数、短整型、日期等）有效
+Special operations	特殊操作
+CONTAINS - True if value is found anywhere in the string	CONTAINS -  如果值在所有数据中匹配，则为 True
+IN - True if value is found within the provided array	IN - 如果值在提供的数组中匹配，则为 True
+True if value matches the provided regular expression	如果值在提供的正则表达式匹配，则为 True
+(?i)Notes?		提示
+MATCHES - True if value matches the provided regular expression	MATCHES - 匹配操作要求整个字符串与表达式匹配
+See Regular Expressions for more info on regular expressions.	有关正则表达式的详细信息，请参阅正则表达式
+Compound Operations	组合操作
+Multiple filters can be combined into compound filters using the following operators.	可以使用以下运算符将多个过滤规则组合到复合筛选器中
+Note: Compound operations cannot be mixed without explicitly specifying order of precedence using parenthesis	提示：如果不使用括号显式指定优先级顺序，则不能混合复合操作
+Tips and Tricks		提示与技巧
+Filters can be generated by right clicking a log entry field, or right clicking within a request / response viewer with selected text.		可以通过右键单击日志条目字段或在具有选定文本的请求/响应查看器中右键单击来生成过滤器
+Right-clicking in the main filter text box will show a dropdown list of the available fields to be used.	右键单击筛选器文本框将显示要使用的可用字段的下拉列表。
+A number of fields are available to use from the requests within your filters. These are listed below.	筛选器中的Request和Respon中有许多字段可供使用，详见下方：
+(?i)Description	描述
+Description: The entire request encoded in Base64	详情：将整个请求编码为Base64
+Description: The request line and associated headers.	详情：请求头Header相关的字段
+Description: The length of the received request.		详情：响应长度
+Description: The tool used to initiate the request.		详情：请求模块来源：如scanner、extensions等
+Description: Has a response been received?	详情：是否收到响应?
+Description: Compares the cookies with the cookie jar to see if any of them are in use.	详情：将 cookie 与 cookie jar 进行比较，以查看其中是否有任何Cookie正在使用中
+(?i)Aliases?.	别名
+
+
+#####添加 PentagridScanController 插件翻译-部分不生效 #####
+(?i)About(\W+)README		关于$1阅读
+(?i)Duplicates?	重复
+(?i)Interesting		有趣的
+(?i)Repeatability reasoning or why it was not scanned	可重复性推理或未扫描原因
+(?i)scanned	已扫描
+(?i)(\W+)repeatability requests		$1可重复性请求
+A new version of the 5# Scan Controller extension was installed, the settingsare not compatible, so all settings have been reset (check the Scan tab).	安装了5# Scan Controller 的新版本，设置不兼容，因此所有设置都已重置(请检查扫描选项卡)
+(?i)Modified Request		修改后的请求
+(?i)Modified Response	修改后的响应
+(?i)Original Request		原请求
+(?i)Original Response	原响应
+(?i)(\W?\w+) not found	找不到$1
+Only change settings marked with (!) if you really know what you do		确保你知道自己在做什么，否则请不要更改带！的设置
+Requests to process (others won't show in UI)		要处理的请求（其他请求不会显示）
+(?i)proxy requests?	代理请求
+(?i)repeater requests?	重发器请求
+Delay scans in seconds (0 to disable)	以秒为单位延迟扫描（0 表示禁用）
+(?i)burp active scan	Burp主动扫描
+(?i)Hard exclusions?		硬排除
+Only scan repeatable requests (!)		只扫描可重复的请求(!)
+Never scan uninteresting HTTP status codes	不扫描无趣的HTTP状态码
+Never scan uninteresting HTTP methods		不扫描无趣的HTTP方法
+Never scan GET requests to uninteresting URL file extensions		不扫描以GET请求的无趣文件扩展：js、css等
+Never scan requests to uninteresting URL file extensions	不扫描无趣的URL文件扩展请求
+Never scan duplicates (URL, status code, parameters, see Duplicates counter)	不扫描重复的请求（URL、状态码、参数、查看重复计数器）
+Never scan duplicates (URL, status code, see Duplicates counter)	不扫描重复的请求（URL、状态码、查看重复计数器）
+Never scan request URLs matching this Regex		不扫描的URL请求，使用正则匹配
+Never scan requests matching this Regex			不扫描匹配此正则表达式的请求
+Only scan requests with a minimum interesting score of	仅扫描有趣得分达到最低分数的请求
+(?i)Repeatability		重复性
+Delay repeatability checks in seconds (0 to disable)	延迟可重复性检查(以秒为单位)(0以禁用)
+(?i)Do heuristics?		启发式扫描
+Maximum response length difference in %	最大响应长度差%
+Heuristic words: repetition success (one per line)		启发式单词：重复成功(每行一个)
+Heuristic words: repetition error (one per line)		启发式单词：重复错误(每行一个)
+Heuristic words: repetition fatal error (one per line)	启发式单词：重复致命错误(每行一次)
+Abort repeatability tests for current request if heuristic detects this many fatal errors	如果启发式检测到这么多致命错误，则中止当前请求的可重复性测试
+Modifications for repeatability	可重复性修改
+Maximum requests until giving up		最大的请求，直到放弃
+Additional catch-all email domain used to detect if email is in a parameter (apart from Collaborator domain)		额外的通用电子邮件域，用于检测电子邮件是否在参数中（除了Collaborator域外）
+Change UUIDs in parameter values	更改参数中的 UUID值
+Change Emails in parameter values	更改参数中的电子邮件值
+Change Numerics [0-9]+ in parameter values		更改参数中数字的值，为[0-9]+
+Change Double [0-9]+\.[0-9]+ in parameter values		更改参数中数字的双数值，为[0-9]+\.[0-9]+
+Change unix epoch timestamps (now +/- 3 months, in seconds or milliseconds) in parameter values		更改参数中unix时间戳，为（现在+/- 3个月范围，以秒或毫秒为单位）
+Change Alphabetic [a-zA-Z] in parameter values		更改参数中的字母值，为（[a-Za-Z]）
+Change Birthdate YYYY-MM-DD in parameter values		更改参数中的日期，为（yyyy-mm-dd）
+Change booleans (true, false, 0, 1, True, etc.) in parameter values		更改参数值的布尔值(true、false、0、1、True等)
+Change according to charset (e.g. 'foo_bar' might change to 'bffar_a') in parameter values		根据字符编码进行更改参数值更改，（例如，'foo_bar'可能变为'bffar_a'）
+Inject into URL query strings (Burp's PARAM_URL)		URL参数注入(Burp的PARAM_URL)
+Inject into body (Burp's PARAM_BODY)		Body注入(Burp的PARAM_body)
+Inject into cookies (Burp's PARAM_COOKIE)	Cookie注入(Burp的PARAM_Cookie)
+Inject into non-standard HTTP headers (this extension's PARAM_NON_STANDARD_HEADER)	HTTP头注入(此扩展的PARAM_non-Standard_Header)
+Inject into XML text nodes (this extension's PARAM_XML_CONTENT)		XML节点注入(此扩展的PARAM_XML_Content)
+Inject into XML attributes (this extension's PARAM_XML_ATTR)		XML属性注入(此扩展的PARAM_XML_ATTR)
+Inject into multipart filename (this extension's PARAM_MULTIPART_FILENAME)	文件名扩展注入(此扩展的PARAM_MULTIPART_FILENAME)
+Inject into multipart content (this extension's PARAM_MULTIPART_CONTENT)		文件内容注入(此扩展的PARAM_MultiPart_Content)
+Inject into JSON values (this extension's PARAM_JSON)		JSON值注入(此扩展的PARAM_JSON)
+Other settings	其他设置
+Turn debug on (see extender output)	打开调试(参见扩展程序输出)
+Use this many Threads to check repeatability/scan (requires extension reload) (!)		要用多少线程来检查可重复性/扫描(需要扩展重新加载) (!)
+(?i)Unhide all log entries?		取消隐藏所有日志记录
+(?i)Delete all log entries?		删除所有日志记录
+Detailed settings (un)interesting things	详细设置有趣/无趣的东西
+Interesting URL file extensions (one per line)	有趣的URL文件扩展名(每行一个)
+Uninteresting URL file extensions (one per line)	无趣的URL文件扩展名(每行一个)
+Interesting status codes (one per line)		有趣的状态码(每一行一个)
+Uninteresting status codes (one per line)		无趣的状态码(每行一个)
+Interesting HTTP methods (one per line)		有趣的HTTP方法(每行一条)
+Uninteresting HTTP methods (one per line)	无趣的HTTP方法(每行一个)
+(?i)Interesting score settings?	扫描分数设置
+Points for multipart/form-data requests		 multipart/form-data请求的分数
+Points for interesting HTTP request method		有趣的HTTP方法分数	
+Points for interesting URL file extension		有趣的URL文件扩展分数
+Points for interesting HTTP response status code		有趣的HTTP状态码分数
+Points per parameter	每个参数的分数
+Experimental features for repeatability definition settings	重复性定义设置(实验性功能)
+Ignore HTTP Status Codes (!)	忽略HTTP状态码(!)
+Fixed response content indicating 200 OK (!)	修复响应内容包含200的状态(!)
+Improve Automated and Semi-Automated Active Scanning	改进自动和半自动的主动扫描
+Active Scanning might often do things that don't make any sense, such as scanning GET requests to .js files or scanning non-repeatable request. This extension allows to filter and preprocess according to your needs. It tries to check if a request is repeatable or not. If a request is not repeatable, it tries to make them repeatable by injecting Hackvertor tags. The extension doesn't try to be perfect, but useful. It cuts corners and in some cases simply doesn't scan certain requests. However, the extension individually displays and explains all decisions, allowing you to change the settings if you don't like the behavior.		主动扫描可能经常做一些没有意义的事情，例如扫描对.js文件的GET请求或扫描不可重复的请求。这个扩展允许根据你的需要进行过滤和预处理。它试图检查一个请求是否是可重复的。如果一个请求是不可重复的，它试图通过注入Hackvertor标签来使其可重复。该扩展并不试图做到完美，但很有用。它走弯路，在某些情况下干脆不扫描某些请求。然而，该扩展单独显示和解释所有的决定，如果你不喜欢这种行为，允许你改变设置。
+(?i)Features?		未来
+Everything configurable (interesting/uninteresting, blacklisting requests, etc.)	一切都是可配置的（有趣/无趣，请求黑名单，等等）
+Howto use this extension	如何使用该扩展
+Usage is very simple:	使用方法非常简单：
+Add the website you test to the scope	将你测试的网站添加到范围中
+Enable "Proxy requests" in the tab/section "Scan - Options - Requests to process"	在 "扫描-选项-要处理的请求 "标签/部分中启用 "代理请求"
+Browse the web application (proxy) by using the Burp builtin browser.	使用Burp内置的浏览器（代理）
+Check back on the Scan tab and see which request have been active scanned. Check those that have a high	在 "扫描 "选项卡上查看哪些请求已经被主动扫描了
+"Interesting" rating but haven't been scanned ("Scanned" column set to false)	检查“有趣”列，有很高评分但还没有被扫描的请求（"已扫描 "列设置为假）
+See the Dashboard for Active Scan findings	查看主动扫描结果的仪表板
+It's always good to sort by the reason column in the UI and check the different reasons.	查看UI中的推理列，排序并检查不同的原因，可能会由意外收获
+
+#####添加Reshaper插件汉化#####
+(?i)HTTP Rules?		HTTP规则
+(?i)WebSocket Rules	WebSocket规则
+(?i)Global Variables?	全局变量
+(?i)Logs?	日志
+(?i)Rule Name(\W+)	规则名称
+(?i)Whens		何时
+(?i)Event Direction	事件方向
+(?!)Event Direction: (\w+)	事件方向:$1
+(?i)From Tool	工具来源
+(?i)Has Entity	包含实体
+(?i)In Scope	在范围内
+(?i)Matches Text	匹配文本
+(?i)Proxy Name	代理名称
+(?i)Request Content Type	请求内容类型
+(?i)Response MIME Type	响应MIME类型
+(?i)Message Type	消息类型
+(?i)Move Up		上移
+(?i)Move Down	下移
+(?i)When Event Direction	事件方向为
+(?i)Use OR Condition		使用OR匹配
+(?i)Negate Result		取反
+(?i)Validated		已验证
+(?i)Validate	验证
+(?i)Thens	然后
+(?i)Break	中断
+(?i)Build HTTP Message	构建HTTP消息
+(?i)Delay	延迟
+(?i)Delete Value	删除值
+(?i)Delete Variable	删除变量
+(?i)Evaluate	评估
+(?i)Parse HTTP Message	解析HTTP消息
+(?i)Prompt	提示
+(?i)Run Script	运行脚本
+(?i)Save File	保存文件
+(?i)Send Message	发送消息
+(?i)Send Request	发送请求
+(?i)Send To	发送至
+(?i)Source Value Type	来源类型
+(?i)Source Value Path	来源路径
+(?i)Match Type	匹配类型
+(?i)Ignore Case	忽略大小写
+(?i)Set Encoding	设置编码
+(?i)Set Value	设置值
+(?i)Set Variable	设置变量
+(?i)Run Process?	运行进程
+(?i)Run Rules?	运行规则
+(?i)Auto Run	自动运行
+(?i)Enable Event Diagnostics?		启用事件诊断
+(?i)Diagnostic Value Max Length	诊断值最大长度
+(?i)Enable Sanity Check Warnings?	启用合理性检查警告
+(?i)Replicate Logs in Extender Output	在扩展栏中输出日志
+(?i)Logs Tab Character Limit	日志选项卡字符限制
+(?i)Default Encoding	默认编码
+(?i)Reset Data	重置数据
+(?i)Items to Export	要导出的项目
+(?i)Refresh	Lists	刷新列表
+(?i)Export Data	导出数据
+(?i)Overwrite Duplicates?	覆盖重复项
+(?i)Capture Traffic From:?	流量来源:
+(?i)When From Tool	当来源从
+(?i)When Matches Text	当匹配文本时
+(?i)Source Message Value	源消息值
+(?i)HTTP Source Address	HTTP源地址
+(?i)HTTP Destination Address	HTTP目的地址
+(?i)HTTP Destination Port	HTTP目的端口
+(?i)URL Protocol	URL协议
+(?i)Request Message	请求消息
+(?i)Request Status Line	请求状态行
+(?i)Request Method	请求方法
+(?i)Request URL	请求URL
+(?i)Request URI Path	请求URL路径
+(?i)Request URL Query Parameters?	请求URL参数
+(?i)Set Event Direction	设置事件方向
+(?i)Destination Message Value	目的消息值
+(?i)Source Text	源文本
