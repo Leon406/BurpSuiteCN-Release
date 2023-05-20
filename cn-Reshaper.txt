@@ -1,0 +1,75 @@
+(?i)HTTP Rules?		HTTP规则
+(?i)WebSocket Rules	WebSocket规则
+(?i)Global Variables?	全局变量
+(?i)Logs?	日志
+(?i)Rule Name(\W+)	规则名称
+(?i)Whens		何时
+(?i)Event Direction	事件方向
+(?!)Event Direction: (\w+)	事件方向:$1
+(?i)From Tool	工具来源
+(?i)Has Entity	包含实体
+(?i)In Scope	在范围内
+(?i)Matches Text	匹配文本
+(?i)Proxy Name	代理名称
+(?i)Request Content Type	请求内容类型
+(?i)Response MIME Type	响应MIME类型
+(?i)Message Type	消息类型
+(?i)Move Up		上移
+(?i)Move Down	下移
+(?i)When Event Direction	事件方向为
+(?i)Use OR Condition		使用OR匹配
+(?i)Negate Result		取反
+(?i)Validated		已验证
+(?i)Validate	验证
+(?i)Thens	然后
+(?i)Break	中断
+(?i)Build HTTP Message	构建HTTP消息
+(?i)Delay	延迟
+(?i)Delete Value	删除值
+(?i)Delete Variable	删除变量
+(?i)Evaluate	评估
+(?i)Parse HTTP Message	解析HTTP消息
+(?i)Prompt	提示
+(?i)Run Script	运行脚本
+(?i)Save File	保存文件
+(?i)Send Message	发送消息
+(?i)Send Request	发送请求
+(?i)Send To	发送至
+(?i)Source Value Type	来源类型
+(?i)Source Value Path	来源路径
+(?i)Match Type	匹配类型
+(?i)Ignore Case	忽略大小写
+(?i)Set Encoding	设置编码
+(?i)Set Value	设置值
+(?i)Set Variable	设置变量
+(?i)Run Process?	运行进程
+(?i)Run Rules?	运行规则
+(?i)Auto Run	自动运行
+(?i)Enable Event Diagnostics?		启用事件诊断
+(?i)Diagnostic Value Max Length	诊断值最大长度
+(?i)Enable Sanity Check Warnings?	启用合理性检查警告
+(?i)Replicate Logs in Extender Output	在扩展栏中输出日志
+(?i)Logs Tab Character Limit	日志选项卡字符限制
+(?i)Default Encoding	默认编码
+(?i)Reset Data	重置数据
+(?i)Items to Export	要导出的项目
+(?i)Refresh	Lists	刷新列表
+(?i)Export Data	导出数据
+(?i)Overwrite Duplicates?	覆盖重复项
+(?i)Capture Traffic From:?	流量来源:
+(?i)When From Tool	当来源从
+(?i)When Matches Text	当匹配文本时
+(?i)Source Message Value	源消息值
+(?i)HTTP Source Address	HTTP源地址
+(?i)HTTP Destination Address	HTTP目的地址
+(?i)HTTP Destination Port	HTTP目的端口
+(?i)URL Protocol	URL协议
+(?i)Request Message	请求消息
+(?i)Request Status Line	请求状态行
+(?i)Request Method	请求方法
+(?i)Request URL	请求URL
+(?i)Request URI Path	请求URL路径
+(?i)Request URL Query Parameters?	请求URL参数
+(?i)Set Event Direction	设置事件方向
+(?i)Destination Message Value	目的消息值
+(?i)Source Text	源文本
