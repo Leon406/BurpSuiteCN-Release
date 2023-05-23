@@ -40,7 +40,7 @@ java -jar burpsuitloader-x.xx-all.jar -r
 ```
 
 
-### java agent配置方式
+### java agent配置方式(如果一键启用有问题的,建议采用这种方式)
 
 
 ```
@@ -107,7 +107,7 @@ debug版本同时会生成已翻译的日志
 
 - javax/swing/text/JTextComponent#setText
 
-- javax/swing/text/PlainDocument#insertString  ==> avax/swing/text/AbstractDocument#insertString  参考 [Belle](https://github.com/ankokuty/Belle)
+- javax/swing/text/PlainDocument#insertString  ==> javax/swing/text/AbstractDocument#insertString  参考 [Belle](https://github.com/ankokuty/Belle)
 
 - javax/swing/JComponent#setToolTipText
 
