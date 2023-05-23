@@ -92,6 +92,9 @@ debug版本同时会生成已翻译的日志
 
 翻译原理实现基于[BurpSuiteCn 汉化](https://github.com/funkyoummp/BurpSuiteCn) , 部分页面无法翻译,个人能力有限,未找到文本注入点,如果有师傅知道也请提issue告知。
 
+目前发现新版本设置树状菜单内容无法翻译
+
+
 以下是原作者找到的注入点
 
 - java/awt/Frame#setTitle
@@ -104,7 +107,7 @@ debug版本同时会生成已翻译的日志
 
 - javax/swing/text/JTextComponent#setText
 
-- javax/swing/text/PlainDocument#setTitle
+- javax/swing/text/PlainDocument#insertString  ==> avax/swing/text/AbstractDocument#insertString  参考 [Belle](https://github.com/ankokuty/Belle)
 
 - javax/swing/JComponent#setToolTipText
 
