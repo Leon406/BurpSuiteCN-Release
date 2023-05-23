@@ -45,10 +45,10 @@ java -jar burpsuitloader-x.xx-all.jar -r
 
 ```
 // loader + 汉化
-%JAVA_HOME%/bin/java -javaagent:burpsuitloader-x.xx-all.ja=loader,han   -jar burpsuite_pro_v20xx.jar
+%JAVA_HOME%/bin/java -javaagent:burpsuitloader-x.xx-all.jar=loader,han   -jar burpsuite_pro_v20xx.jar
 
 // 仅汉化,loader失效
-%JAVA_HOME%/bin/java -javaagent:burpsuitloader-x.xx-all.ja=han   -jar burpsuite_pro_v20xx.jar
+%JAVA_HOME%/bin/java -javaagent:burpsuitloader-x.xx-all.jar=han   -jar burpsuite_pro_v20xx.jar
 
 ```
 
