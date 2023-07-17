@@ -14,6 +14,9 @@
 </p>
 BurpSuite汉化发布   如果有用请star,这是支持我更新的最大的动力.
 
+**3.7.17**
+ fix [#16](https://github.com/Leon406/BurpSuiteCN-Release/issues/16) MacOS配置无效
+ 
 **3.5.20 翻译更新到 2023.5.1 版本**
  支持外置多个cn*.txt文件翻译,优化不翻译白名单,兼容插件
  
