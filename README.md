@@ -13,6 +13,13 @@
 
 </p>
 BurpSuite汉化发布   如果有用请star,这是支持我更新的最大的动力.
+<hr>
+**4.11.22**
+
+- 翻译更新 2024.10.1 版本
+- 支持自定义java版本及参数环境变量 
+  - bp.java    java home路径
+  - bp.java.options  额外参数
 
 **3.7.17**
  fix [#16](https://github.com/Leon406/BurpSuiteCN-Release/issues/16) MacOS配置无效
