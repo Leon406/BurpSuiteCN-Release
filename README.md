@@ -8,9 +8,9 @@
 
 <h4 align="center">Visitors :eyes:</h4>
 
-<p align="center"><img src="https://profile-counter.glitch.me/Leon406_BurpSuiteCN-Release2/count.svg" alt="BurpSuiteCN-Release :: Visitor's Count" />
- <img width=0 height=0 src="https://profile-counter.glitch.me/Leon406/count.svg" alt="Leon406:: Visitor's Count" />
-
+<p align="center">
+<img  src="https://api.visitorbadge.io/api/visitors?path=leon406%2FBurpSuiteCN&countColor=%232ccce4" alt="Sub :: Visitor's Count" />
+ <img width=0 height=0 src="https://api.visitorbadge.io/api/visitors?path=leon406%2Fleon406&countColor=%232ccce4" alt="Leon406:: Visitor's Count" />
 </p>
 BurpSuite汉化发布   如果有用请star,这是支持我更新的最大的动力.
 <hr>
